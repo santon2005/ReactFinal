@@ -1,0 +1,9 @@
+.ui {
+    display: flex;
+    position: relative;
+    left: 90px;
+}
+
+.card-img {
+ height: 390px;
+}
