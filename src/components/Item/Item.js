@@ -19,7 +19,7 @@ const Item = ({ item }) => {
     <Button variant="primary">BUY</Button>
     <br/>
     <br/>
-    <Link to="/DetailProduct"  className='a'>MORE DETAILS</Link>
+    <Link to= {`/item/${item.id}`}>MORE DETAILS</Link>
   </Card.Body>
   <ItemCount/>
 </Card>
