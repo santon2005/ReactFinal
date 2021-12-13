@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import NavBar from '../components/NavBar/NavBar'
-import Home from '../view/Home/Home';
-import Ipad from '../view/Ipad/Ipad';
-import Iphone from '../view/Iphone/Iphone';
-import Footer from '../components/Footer/Footer'
-import Cart from '../view/Cart/Cart';
-import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailContainer';
+import NavBar from '../NavBar/NavBar'
+import Home from '../../view/Home/Home';
+import Ipad from '../../view/Ipad/Ipad';
+import Iphone from '../../view/Iphone/Iphone';
+import Footer from '../Footer/Footer'
+import Cart from '../../view/Cart/Cart';
+import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 const Rutas = () => {
     return (
         <div>
