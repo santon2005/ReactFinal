@@ -1,21 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail'
 
 const ItemDetailContainer = () => {
+    const  params = useParams()
+    //const  id = useParams()
 
     const [items, setItems] = useState([])
-    const params = useParams()
-    console.log(params.id)
     useEffect(() => {
         setTimeout(() => {
-        fetch(`/productos.json`)
+        fetch('/productos.json')
         .then(response => response.json())
-        .then(respJson => {console.log(respJson); setItems(respJson)})
+        .then(respJson => {console.log(respJson); setItems(respJson.find((prod) => prod.id === params.id)
+        )})
         .catch(error => console.log('Error: ', error))
-        }, 2000);
-    }, [])
-
+    }, 2000);
+    }, [params])
+    
     return (
         <div className='ItemDetailContainer'>
             <ItemDetail items={items}/>
@@ -25,3 +26,4 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer
+

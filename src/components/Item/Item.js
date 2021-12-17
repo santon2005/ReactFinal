@@ -6,8 +6,8 @@ import './Item.css'
 import { Link } from "react-router-dom";
 import ItemCount from '../ItemCount/ItemCount'
 const Item = ({ item }) => {
-    return (
-      
+    
+  return (
       <div className='Item'>
             <Card style={{ width: '18rem' }}>
   <Card.Img src={ item.Imagen } />

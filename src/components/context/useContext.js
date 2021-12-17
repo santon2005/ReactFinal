@@ -1,4 +1,4 @@
- import React, { createContext, useState } from 'react'
+/*  import React, { createContext, useState } from 'react'
 export const CartContext = createContext ([])
 
 
@@ -28,4 +28,4 @@ const addItem = (id, item, qty) => {
 }
 
 export default CartContext
- 
+  */
