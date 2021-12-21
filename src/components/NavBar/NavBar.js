@@ -2,6 +2,7 @@ import React from 'react';
 //import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css'
 import { Link } from "react-router-dom";
+import CartWidget from '../CartWidget/CartWidget';
 
 
 const NavBar = () => {
@@ -9,9 +10,9 @@ const NavBar = () => {
       <nav className='Navegacion'>
         <ul className='ul'>
           <Link to="/" className='a'>HOME</Link>
-          <Link to="/Ipad"  className='a'>IPAD</Link>
           <Link to="/Iphone"  className='a'>IPHONE</Link>
-          <Link to="/Cart"  className='a'>CART</Link>
+          <Link to="/About"  className='a'>ABOUT</Link>
+          <Link to="/cart"  className='a'><CartWidget/></Link>
         </ul>
       </nav>  
     );

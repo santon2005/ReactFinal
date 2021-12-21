@@ -1,0 +1,13 @@
+.CartWidget{
+    position: relative;
+    bottom: 53px;
+    left: 340px;
+}
+
+.ItemsInCart{
+    position: relative;
+    bottom: 25px;
+    left: 1230px;
+    color: white;
+    width: 24px;
+}

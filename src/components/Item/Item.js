@@ -1,10 +1,10 @@
 import React from 'react'
 //import { Link } from "react-router-dom";
-import { Button, Card } from 'react-bootstrap';
+import {  Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css'
 import { Link } from "react-router-dom";
-import ItemCount from '../ItemCount/ItemCount'
+//import ItemCount from '../ItemCount/ItemCount'
 const Item = ({ item }) => {
     
   return (
@@ -16,12 +16,8 @@ const Item = ({ item }) => {
     <Card.Text>
       { item.Precio }
     </Card.Text>
-    <Button variant="primary">BUY</Button>
-    <br/>
-    <br/>
     <Link to= {`/item/${item.id}`}>MORE DETAILS</Link>
   </Card.Body>
-  <ItemCount/>
 </Card>
         </div>
         

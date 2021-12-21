@@ -3,3 +3,15 @@
     font-family: sans-serif;
 }
 
+.Spinner{
+    color: white;
+    position: relative;
+    left: 940px;
+}
+
+.SpinnerDos{
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 920px;
+    top: 20px;
+}

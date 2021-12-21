@@ -1,10 +1,12 @@
 import React from 'react'
 import Rutas from '../src/components/Rutas/Rutas'
-//mport CartProvider from './components/context/useContext'
+import { CartProvider } from './context/useContext'
 const App = () => {
   return (
     <div className='App'>
+      <CartProvider>
       <Rutas />
+      </CartProvider>
 
     </div>
   )
